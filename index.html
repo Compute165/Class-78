@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Class 78</title>
+</head>
+
+<body>
+    <hr>
+
+    <p>How to make array?
+        <h4 id="declare_array"></h4>
+    </p>
+
+    <hr>
+
+    <p>How to fetch first value from array?
+        <h4 id="first_from_array"></h4>
+    </p>
+
+    <hr>
+
+    <p>How to find length of array?
+        <h4 id="length_array"></h4>
+    </p>
+
+    <hr>
+
+    <p>How to loop the array?
+        <h4 id="array_loop"></h4>
+    </p>
+
+    <p>How to add element at the end of the array?
+        <h4 id="array_add_end"></h4>
+    </p>
+
+    <hr>
+
+    <p>How to declare array with alphabets?
+        <h4 id="array_alphabets"></h4>
+    </p>
+
+    <hr>
+
+    <p>How to sort alphabets in array?
+        <h4 id="array_sorted_letters"></h4>
+    </p>
+
+    <hr>
+
+    <p>How to declare array with numbers?
+        <h4 id="array_numbers"></h4>
+    </p>
+
+    <hr>
+
+    <p>How to find max number in array?
+        <h4 id="array_maxnumber"></h4>
+    </p>
+
+    <hr>
+
+    <p>How to find min number in array?
+        <h4 id="array_minnumber"></h4>
+    </p>
+
+</body>
+
+<script>
+    var fruits = ["mango", "pinapple", "apple"];
+    console.log(fruits);
+    document.getElementById("declare_array").innerHTML = fruits;
+
+    console.log(fruits[0]);
+    document.getElementById("first_from_array").innerHTML = fruits[0];
+
+    console.log(fruits.length);
+    document.getElementById("length_array").innerHTML = fruits.length;
+
+    var array2 = ""
+    for (i = 0; i < fruits.length; i++) {
+        array2 = array2 + fruits[i] + "<br>";
+        console.log(array2);
+    }
+    document.getElementById("array_loop").innerHTML = array2;
+
+    fruits.push("strawberry");
+    console.log(fruits);
+    document.getElementById("array_add_end").innerHTML = fruits;
+
+    var letters = ["a", "b", "b", "v", "f", "r", "t", ];
+    console.log(letters);
+    document.getElementById("array_alphabets").innerHTML = letters;
+
+    letters.sort();
+    console.log(letters);
+    document.getElementById("array_sorted_letters").innerHTML = letters;
+
+    var numbers = ["7", "9", "6", "4", "8", "1", "2"]
+    console.log(numbers);
+    document.getElementById("array_numbers").innerHTML = numbers;
+
+    var max = Math.max.apply(Math, numbers)
+    console.log(max);
+    document.getElementById("array_maxnumbers").innerHTML = max;
+
+    var min = Math.min.apply(Math, numbers)
+    console.log(min);
+    document.getElementById("array_minnumbers").innerHTML = min;
+</script>
+
+</html>
